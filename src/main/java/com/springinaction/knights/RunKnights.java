@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class RunKnights {
     public static void main(String[] args) {
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(RunKnights.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(KnightConfig.class);
 
         Knight knight = context.getBean(Knight.class);
 
